@@ -65,7 +65,8 @@ namespace task_ten
                 try
                 {
                     number = Convert.ToInt32(Console.ReadLine());
-                    ok = true;
+                    if (number < 2) Console.WriteLine("Количество членов последовательности должно превышать 2!");
+                    else ok = true;
                 }
                 catch (FormatException)
                 {
